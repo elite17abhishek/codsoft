@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Glassmorphic Calculator</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GlowSpace - Your Creative Landing</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="calculator">
-      <input type="text" id="display" disabled />
-      <div class="buttons">
-        <button class="btn" data-value="C">C</button>
-        <button class="btn" data-value="/">÷</button>
-        <button class="btn" data-value="*">×</button>
-        <button class="btn" data-value="←">←</button>
+  <header>
+    <nav class="navbar">
+      <div class="logo">GlowSpace</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <button class="btn" data-value="7">7</button>
-        <button class="btn" data-value="8">8</button>
-        <button class="btn" data-value="9">9</button>
-        <button class="btn" data-value="-">−</button>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to GlowSpace</h1>
+      <p>Design. Build. Inspire. Create stunning web experiences.</p>
+      <button onclick="scrollToFeatures()">Explore Features</button>
+    </div>
+  </section>
 
-        <button class="btn" data-value="4">4</button>
-        <button class="btn" data-value="5">5</button>
-        <button class="btn" data-value="6">6</button>
-        <button class="btn" data-value="+">+</button>
-
-        <button class="btn" data-value="1">1</button>
-        <button class="btn" data-value="2">2</button>
-        <button class="btn" data-value="3">3</button>
-        <button class="btn equal" data-value="=">=</button>
-
-        <button class="btn zero" data-value="0">0</button>
-        <button class="btn" data-value=".">.</button>
+  <section class="features" id="features">
+    <h2>What We Offer</h2>
+    <div class="feature-grid">
+      <div class="card">
+        <h3>Fast Performance</h3>
+        <p>Optimized for speed and efficiency.</p>
+      </div>
+      <div class="card">
+        <h3>Responsive Design</h3>
+        <p>Looks great on all screen sizes.</p>
+      </div>
+      <div class="card">
+        <h3>Easy Customization</h3>
+        <p>Clean and simple code structure.</p>
       </div>
     </div>
-  </div>
+  </section>
+
+  <footer id="contact">
+    <p>&copy; 2025 GlowSpace. Crafted with ❤️ by Learners.</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
